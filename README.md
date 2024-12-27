@@ -11,7 +11,6 @@ Build stunning, interactive UIs with **GSAP** (GreenSock Animation Platform) and
 - **Creative Styling**: Modern CSS techniques for beautiful, responsive designs.  
 - **Interactive UIs**: Cards, buttons, sliders, modals, and more.  
 
----
 
 ### 💡 Features
 
@@ -19,7 +18,6 @@ Build stunning, interactive UIs with **GSAP** (GreenSock Animation Platform) and
 - Fully responsive, modern UI patterns.  
 - Focus on user experience and design.  
 
----
 
 ### 🎯 Goals
 
