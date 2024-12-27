@@ -17,9 +17,9 @@ In this repository, you'll find a collection of front-end projects and UI compon
 
 ### 🚀 Tech Stack
 
-- **HTML5**: The foundation for building semantic web pages.
-- **CSS3**: Styling and layout using advanced CSS techniques.
-- **JavaScript (ES6+)**: The scripting language for interactive elements.
+- **HTML**: The foundation for building semantic web pages.
+- **CSS**: Styling and layout using advanced CSS techniques.
+- **JavaScript **: The scripting language for interactive elements.
 - **GSAP**: The animation library for smooth, powerful, and complex animations.
 - **Flexbox & Grid**: For responsive layouts that work seamlessly across devices.
 
