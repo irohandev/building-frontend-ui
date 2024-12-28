@@ -38,3 +38,4 @@ menu.addEventListener("click", function() {
 cross.addEventListener("click", function() {
     tl.reverse(); // Reverse the timeline animation (closes the sidebar)
 });
+
