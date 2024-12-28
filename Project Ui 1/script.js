@@ -16,3 +16,4 @@ main.addEventListener("mousemove", function (dets) {
         duration: 1.5,
     });
 });
+

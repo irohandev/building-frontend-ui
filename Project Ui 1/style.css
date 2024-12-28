@@ -1,27 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black
+/* Universal styles for all elements */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Set font family */
+    color: black; /* Default text color to black */
 }
 
-html, 
-body {
-    height: 100%;
-    width: 100%;
+/* Ensure html and body take up the full viewport height and width */
+html, body {
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
 }
 
-#main{
-    width: 100%;
-    height: 100%;
-    background-color: #111;
+/* Main container */
+#main {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #111; /* Set dark background color */
 }
 
-#cursor{
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border-radius: 50%;
-    position: fixed;
+/* Custom cursor */
+#cursor {
+    height: 20px; /* Set height of the cursor */
+    width: 20px; /* Set width of the cursor */
+    background-color: white; /* Set cursor color to white */
+    border-radius: 50%; /* Make the cursor circular */
+    position: fixed; /* Fix the position relative to the viewport */
 }
