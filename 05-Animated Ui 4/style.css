@@ -1,0 +1,55 @@
+/* Universal reset for all elements */
+*{
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the default font family */
+}
+
+/* Ensures the HTML and body elements take up the full viewport */
+html, 
+body {
+    height: 100%; /* Makes sure the height is 100% of the viewport */
+    width: 100%;  /* Makes sure the width is 100% of the viewport */
+}
+
+/* Set background color for the body */
+body{
+    background-color: #111; /* Dark background color for the body */
+}
+
+/* Style for individual pages (page1, page2, page3) */
+#page1, #page2, #page3{
+    height: 100vh; /* Each page takes up 100% of the viewport height */
+    width: 100%;   /* Full width of the viewport */
+    padding: 5vw 0; /* Padding of 5vw (viewport width) on top and bottom */
+}
+
+/* Style for the move container */
+#move{
+    background-color: #D8FF04; /* Bright yellow background color */
+    display: flex; /* Use flexbox to align child elements */
+    padding: 3vw 0; /* Padding of 3vw on top and bottom */
+    overflow: hidden; /* Hide content that overflows the container */
+}
+
+/* Style for marque container (scrolling content) */
+.marque{
+    flex-shrink: 0; /* Prevents the element from shrinking */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    gap: 3vw; /* Space between items is 3vw */
+    padding: 0 1.5vw; /* Horizontal padding of 1.5vw */
+    transform: translateX(-100%); /* Initially positions the content off-screen to the left */
+}
+
+/* Style for the text inside marque */
+.marque h1{
+    font-size: 4vw; /* Font size is 4% of the viewport width */
+}
+
+/* Style for images inside marque */
+.marque img{
+    height: 4vw; /* Height of images is 4% of the viewport width */
+}
