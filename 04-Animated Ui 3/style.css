@@ -1,29 +1,34 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:white
+/* Universal selector: applies styles to all elements */
+* {
+    margin: 0; /* Removes default margin of all elements */
+    padding: 0; /* Removes default padding of all elements */
+    box-sizing: border-box; /* Ensures padding and border are included in an element's total width and height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets a clean, sans-serif font stack for all elements */
+    color: white; /* Sets the default text color to white for all elements */
 }
 
+/* HTML and body styles ensure the page takes up the full viewport */
 html, 
 body {
-    height: 100%;
-    width: 100%;
+    height: 100%; /* Makes the height of these elements match the height of the viewport */
+    width: 100%; /* Makes the width of these elements match the width of the viewport */
 }
 
-body{
-    background-color: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Styles for the body element */
+body {
+    background-color: #111; /* Sets a dark gray (almost black) background color for the body */
+    display: flex; /* Enables flexbox layout, which makes alignment easier */
+    align-items: center; /* Vertically centers child elements within the body */
+    justify-content: center; /* Horizontally centers child elements within the body */
 }
 
-h1{
-    font-size: 100px;
-    overflow: hidden;
+/* Styles for the <h1> element */
+h1 {
+    font-size: 100px; /* Sets the font size to 100px, making the text large */
+    overflow: hidden; /* Ensures that any overflowing content is hidden */
 }
 
-h1 span{
-    display: inline-block;
+/* Styles for <span> elements inside <h1> */
+h1 span {
+    display: inline-block; /* Changes the display property to inline-block, allowing the span to behave like a block for layout purposes while still sitting inline */
 }
