@@ -1,70 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Universal styles for all elements */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Set font family */
 }
 
-html, 
+/* Ensure the html and body take up the full viewport height and width */
+html, body {
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+}
+
+/* Prevent body from overflowing */
 body {
-    height: 100%;
-    width: 100%;
+    overflow: hidden; /* Disable scrolling */
 }
 
-body{
-    overflow: hidden;
+/* Main container */
+#main {
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    background-image: url(https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); /* Set background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
 }
 
-#main{
-    height: 100%;
-    width: 100%;
-    background-image: url(https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: cover;
-    background-position: center;
+/* Navigation bar */
+#nav {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out elements */
+    padding: 40px 50px; /* Add padding around the nav */
+    color: #fff; /* White text color */
 }
 
-#nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 50px;
-    color: #fff;
+/* Header in the navigation bar */
+#nav h2 {
+    font-size: 30px; /* Set font size */
 }
 
-#nav h2{
-    font-size: 30px;
+/* Icon in the navigation bar */
+#nav i {
+    font-size: 30px; /* Set font size */
+    font-weight: 800; /* Bold font weight */
+    cursor: pointer; /* Show pointer cursor on hover */
 }
 
-#nav i{
-    font-size: 30px;
-    font-weight: 800;
-    cursor: pointer;
+/* Full-screen sidebar (hidden off-screen initially) */
+#full {
+    height: 100%; /* Full height */
+    width: 40%; /* 40% width */
+    position: absolute; /* Absolute positioning */
+    background-color: rgb(255, 255, 255, 0.544); /* Semi-transparent white background */
+    top: 0; /* Align to the top of the screen */
+    right: -40%; /* Initially off-screen to the right */
+    backdrop-filter: blur(10px); /* Blur the background behind the sidebar */
+    padding: 150px 50px; /* Add padding inside the sidebar */
 }
 
-#full{
-    height: 100%;
-    width: 40%;
-    position: absolute;
-    background-color: rgb(255, 255, 255, 0.544);
-    top: 0;
-    right: -40%;
-    backdrop-filter: blur(10px);
-    padding: 150px 50px;
-    
+/* Header inside the full-screen sidebar */
+#full h4 {
+    font-size: 50px; /* Set large font size */
+    font-weight: 500; /* Medium font weight */
+    margin-bottom: 5px; /* Add small margin at the bottom */
 }
 
-#full h4{
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-#full i{
-    position: absolute;
-    top: 5%;
-    right: 15%;
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
+/* Cross icon inside the full-screen sidebar */
+#full i {
+    position: absolute; /* Position the cross icon absolutely within the sidebar */
+    top: 5%; /* Place it near the top */
+    right: 15%; /* Position it near the right edge */
+    background-color: #fff; /* Set background color to white */
+    padding: 5px; /* Add padding inside the circle */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Show pointer cursor on hover */
 }
